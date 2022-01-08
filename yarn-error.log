@@ -1,0 +1,45 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js add global heroku-cli@latest
+
+PATH: 
+  /data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  android arm64
+
+Trace: 
+  Error: EPERM: operation not permitted, symlink '../uuid/dist/bin/uuid' -> '/storage/emulated/0/Download/nodeprojects/blog/node_modules/@heroku-cli/command/node_modules/.bin/uuid'
+
+npm manifest: 
+  {
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "start-dev": "nodemon index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "mongodb": "^4.2.2",
+      "objectid": "^3.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
